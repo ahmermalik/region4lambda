@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.425.0",
+    "aws-sdk": "^2.1470.0",
+    "mssql": "^10.0.1"
+  }
+}
