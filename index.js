@@ -1,7 +1,7 @@
 const sql = require('mssql');
 const { SecretsManagerClient, GetSecretValueCommand } = require("@aws-sdk/client-secrets-manager");
 
-const secret_name = "region/rds"; // Replace with the name of your secret.
+const secret_name = "region/rds"; 
 const client = new SecretsManagerClient({ region: "us-east-2" });
 
 exports.handler = async (event) => {
@@ -35,3 +35,5 @@ exports.handler = async (event) => {
         body: JSON.stringify(result.recordset)
     };
 };
+
+//test pipeline
